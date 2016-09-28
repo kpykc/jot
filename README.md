@@ -1,6 +1,6 @@
 <p align="center">
 
-  <br><img src="readmeImages/screenshot1.png" alt="logo" />
+  <br><img src="readmeImages/screenshot3.png" alt="logo" />
   <br>
   <br>
   <b>
@@ -20,7 +20,9 @@
 </p>
 
 <br>
+
 ##Install
+
 <p align="center">
   <a href="https://chrome.google.com/webstore/detail/jot/mnemjleajnmodijhnibpekloajfdjjja?hl=en-US">
     <img src="readmeImages/chromeStoreLink.png" alt="Download link" />
@@ -29,6 +31,14 @@
 
 <br>
 <br>
+
+## Modifications compared to original
+
+Used Ubuntu colors, no backgrounds:
+
+- https://design.ubuntu.com/brand/colour-palette
+
+
 ## Why
 Creating a todo list is no fun. It's hard to remind yourself to use one and it's nearly impossible to avoid losing them
 <br>
@@ -38,6 +48,7 @@ Creating a todo list is no fun. It's hard to remind yourself to use one and it's
 <br>
 
 <br>
+
 ## Contribute
 1. Fork the repo and ```git clone``` to your local machine
 1. Setup your dev environment by selecting **Load unpacked extension** from the Chrome Extension page (available at chrome://extensions) and choosing your local fork's ```jot``` folder within the ```jot``` project repo.
