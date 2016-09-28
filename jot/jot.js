@@ -21,14 +21,14 @@ window.onload = function(){
 	var tBtn = document.getElementById("tBtn");
 	var appBtn = document.getElementById("appBtn");
 
-	//used for testing 
+	//used for testing
 	/* storage = {
 		"0": "youtu.be/link",
 		"1": "#hexcode"
-	} 
+	}
 	localStorage.setItem('list', JSON.stringify(storage));
 	*/
-	
+
 
 	// find storage or set to nothing in order to render
 	if (localStorage && localStorage.getItem('list')) {
@@ -46,7 +46,7 @@ window.onload = function(){
 	arr[0].parentNode.removeChild(arr[0]);
 
 	// loop through storage and render each line approriately
-	var length = Object.keys(storage).length; 
+	var length = Object.keys(storage).length;
 	for(var i=0; i <= length; i++) {
 		var div = document.createElement("div");
 		div.setAttribute("id", lineNum);
@@ -61,7 +61,7 @@ window.onload = function(){
 					div.setAttribute("class", "");
 				});
 				txt.appendChild(document.createTextNode(""));
-			} else 
+			} else
 				break;
 		} else {
 			txt.appendChild(document.createTextNode(storage[i]));
@@ -93,7 +93,7 @@ window.onload = function(){
 
 		return txt;
 	}
-	
+
 
 	// returns ALL divs in the 'input' div
 	var divArray = divCont.getElementsByTagName("div");
@@ -171,7 +171,7 @@ window.onload = function(){
     				} else {
 					e.preventDefault();
 				}
-			} 
+			}
 
 		});
 
@@ -185,12 +185,12 @@ window.onload = function(){
 				var btn = div.getElementsByClassName('left icon-right-open-big')[0];
 				var text = txt.innerText;
 
-				// if the current line is blank, delete it and put focus on 
+				// if the current line is blank, delete it and put focus on
 				// previous element
 				if(text == '' || text == null){
 					e.preventDefault();
 					var arr = div.parentNode.getElementsByTagName('div');
-					
+
 					// filter out only 'txt' div's
 					// can't use .filter on a nodeList
 					var txtArr = [];
@@ -207,7 +207,7 @@ window.onload = function(){
 					while (txtArr[lcv].innerText != text) {
 						lcv++;
 					}
-					
+
 					focusAtEnd(txtArr[lcv - 1]);
 				}
 
@@ -216,7 +216,7 @@ window.onload = function(){
 	}
 
 
-	// the following few functions are to set listeners for 
+	// the following few functions are to set listeners for
 	// elements already in storage
 	function setBtnListener (element, index, array) {
 		var curr = element.getElementsByClassName('left icon-right-open-big')[0];
@@ -238,7 +238,7 @@ window.onload = function(){
 	// timer used so that storage isnt reset on every keystroke
 	divCont.addEventListener("keyup", function(){
 		resetTimer();
-	}); 
+	});
 
     // check if text is empty
     function isEmpty(text) {
@@ -270,7 +270,7 @@ window.onload = function(){
 				j++;
 			}
 		}
-		
+
 		localStorage.setItem('list', JSON.stringify(storage));
 	}
 
@@ -294,7 +294,7 @@ window.onload = function(){
 	        range.moveToElementText(el);
 	        range.select();
 	    } else if (window.getSelection) {
-	        selection = window.getSelection();        
+	        selection = window.getSelection();
 	        range = document.createRange();
 	        range.selectNodeContents(el);
 	        selection.removeAllRanges();
@@ -305,7 +305,7 @@ window.onload = function(){
 	// set background
 	var numOfBackgrounds = 52;
 	var n = Math.floor((Math.random() * numOfBackgrounds) + 1);
-	document.body.style.backgroundImage = "url('bg/"+n+".jpg')";
+	// document.body.style.backgroundImage = "url('bg/"+n+".jpg')";
 
 	appBtn.addEventListener("click", function(){
 		chrome.tabs.update({
@@ -345,7 +345,7 @@ window.onload = function(){
 		var arr = divCont.getElementsByTagName("div");
 
 		for(var lcv = arr.length - 1; lcv >= 1; lcv-=2){
-			// completely clear html 
+			// completely clear html
 			if(lcv === 1)
 				var txt = arr[lcv].innerHTML='';
 			// only clear text on the first line

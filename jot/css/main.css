@@ -64,7 +64,9 @@
 .container {
 	top: 0;
 	left: 0;
-	color: rgba(255, 255, 255, 1);
+    color: #2C001E;
+    /* color: #F08763; */
+    /* color: rgba(0, 0, 0, 1); */
 	transition: all 500ms ease;
 }
 
@@ -90,13 +92,13 @@ body {
 	font-family: fontello;
 }
 
-.input { 
-	font-family: 'Avenir', sans-serif; 
-	font-weight: 100; 
+.input {
+	font-family: 'Avenir', sans-serif;
+	font-weight: 100;
 	outline: none;
-	height: 70%; 
+	height: 70%;
 	padding: 0;
-	overflow: auto; 
+	overflow: auto;
 	margin: 3.5rem 0 0 0;
 	transition: all 200ms ease-out;
 }
@@ -121,7 +123,7 @@ body {
 
 .input i {
 	text-shadow: none;
-	font-size: 2.5rem;	
+	font-size: 2.5rem;
 }
 
 .txtHover {
@@ -131,10 +133,10 @@ body {
 }
 
 .apps {
-	font-family: 'Lato', sans-serif; 
-	font-size: 1rem; 
-	font-weight: 900; 
-	position: absolute; 
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	font-weight: 900;
+	position: absolute;
 	top: 40px;
 	left: 40px;
 	max-width: 150px;
@@ -149,11 +151,11 @@ body {
 }
 
 
-.header { 
-	font-family: 'Lato', sans-serif; 
-	font-size: 5rem; 
-	font-weight: 900; 
-	position: relative; 
+.header {
+	font-family: 'Lato', sans-serif;
+	font-size: 5rem;
+	font-weight: 900;
+	position: relative;
 	max-width: 150px;
 	padding-left: 5px;
 }
@@ -167,15 +169,15 @@ body {
 	cursor: pointer;
 }
 
-.button { 
-	float: right; 
-	position: relative; 
+.button {
+	float: right;
+	position: relative;
 	background: none;
-	border: 5px solid #fff; 
+	border: 5px solid #fff;
 	margin-top: 20px;
-	font-family: 'Lato', sans-serif; 
-	font-size: 3rem; 
-	font-weight: 900; 
+	font-family: 'Lato', sans-serif;
+	font-size: 3rem;
+	font-weight: 900;
 	padding: 0px 10px 0px 10px;
 }
 
@@ -196,7 +198,10 @@ body {
 .overlay {
 	width:100%;
 	height:100%;
-	background-color:rgba(30, 30, 30, 0.95);
+	background-color: #AEA79F;
+    /* background-color: #2C001E; */
+    /* background-color: #333333; */
+    /* background-color: # rgba(60, 30, 30, 0.95); */
 	left: 0;
 	right: 0;
 	top: 0;
@@ -222,12 +227,12 @@ body {
 ::-webkit-scrollbar {
     width: 12px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    background-color: rgba(255, 255, 255, 0.1); 
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 0px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
     border-radius: 0px;
     background-color: #fff;
